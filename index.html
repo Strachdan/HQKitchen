@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <title>HQ Kitchen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-image: url(cheesetwist.jpg);
+      min-height: 75%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .menu {
+      display: none;
+
+    }
+
+    img {}
+
+  </style>
+
+  <body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block w3-black">Home</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">About</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">Menu</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container" id="home">
+      <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+        <span class="w3-tag"></span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px">HQ Kitchen</span>
+      </div>
+      <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">Delivered Fresh to your door </span>
+      </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-large">
+
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About HQ Kitchen</span></h5>
+          <p>From the kitchen at HQ we escaped the daily monotony of lockdown by baking. We dug out old recipes and dared to challenge ourselves to new ones. Eventually we were under a pile of food and had to share. This led us down an exciting path
+            and we want to share our baking with you.</p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+
+          </div>
+          <img src="images\chocorangetart1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width:800px">
+
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Our menu</span></h5>
+
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'SelectionBag');" id="myLink">
+              <div class="w3-col s6 tablink">Selection Bag</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pastry');" id="myLink">
+              <div class="w3-col s6 tablink">Pastry</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pies');" id="myLink">
+              <div class="w3-col s6 tablink">Pies/Tarts</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Traybakes');">
+              <div class="w3-col s6 tablink">Traybakes</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Cheesecake');">
+              <div class="w3-col s6 tablink">Cheesecake</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Cakes');">
+              <div class="w3-col s6 tablink">Cakes</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Cupcakes');">
+              <div class="w3-col s6 tablink">Cupcakes</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Cookies');">
+              <div class="w3-col s6 tablink">Cookies/Biscuits</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Savoury');">
+              <div class="w3-col s6 tablink">Savoury</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Other');">
+              <div class="w3-col s6 tablink">Other</div>
+            </a>
+          </div>
+          <div id="SelectionBag" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Weekly bakers choice <i>£10</i></h5>
+            <p class="w3-text-gray">
+              Bakers choice 6 sweet piece taster selection bag. Also available as a Vegan selection bag.
+            </p>
+
+          </div>
+
+          <div id="Pastry" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Croissants <i>£5 for 6</i></h5>
+            <p class="w3-text-grey">A French breakfast classic!</p>
+            <h5>Pain au chocolat <i>£5 for 6</i></h5>
+            <p class="w3-text-grey">Another french classic filled with luxurious dark chocolate.</p>
+            <h5>Eclairs <i>£8 for 4</i> </h5>
+            <p class="w3-text-grey">Filled with either fresh cream, traditional french chocolate or coffee cream.</p>
+            <h5>Cinnamon buns (v) <i> £5 for 4</i></h5>
+            <p class="w3-text-grey">A classic baked treat, available with a vegan option</p>
+            <h5>Chocolate twists <i> £6 for 6</i></h5>
+            <p class="w3-text-grey">Our signature pastry, all twisted up with chocolate.</p>
+            <h5>Cheese twists <i>£6 for 6</i></h5>
+            <p class="w3-text-grey">Our signature pastry, all twisted up with cheese</p>
+            <h5>Pesto twists <i>£6 for 6</i></h5>
+            <p class="w3-text-grey">Our signature pastry, all twisted up with pesto</p>
+            <h6 class="w3-text-grey"><I>(v) - Vegan option available (n) - Contains Nuts</I></h6>
+
+          </div>
+
+          <div id="Pies" class="w3-container menu w3-padding-48 w3-card">
+            <h6><i>Available as 8” tart £12 or 12 mini tarts for £15</i></h6>
+            <h5>Chocolate Tart (v)</h5>
+            <p class="w3-text-grey">Deliciously luxurious chocolate</p>
+
+            <h5>Chocolate Orange Tart (v)</h5>
+            <p class="w3-text-grey">Our Chocolate tart with a pleasing zesty twist</p>
+
+            <h5>Apple pie (v)</h5>
+            <p class="w3-text-grey">Filled with sweet fresh apples</p>
+
+            <h5>Rhubarb Crumble (v)</h5>
+            <p class="w3-text-grey">A tart classic made with home grown rhubarb</p>
+
+            <h5>Banoffee Pie</h5>
+            <p class="w3-text-grey">Our classic Bannoffee pie made with ripe bananas and rich toffee </p>
+
+            <h5>Strawberry tart</h5>
+            <p class="w3-text-grey">Made with our sweet Homegrown Strawberries </p>
+            <h6 class="w3-text-grey"><I>(v) - Vegan option available (n) - Contains Nuts</I></h6>
+
+
+
+          </div>
+          <div id="Traybakes" class="w3-container menu w3-padding-48 w3-card">
+            <h6><i>Available full tray or half tray</i></h6>
+
+            <h5>Malteaser <i>£6 half tray / £10 full tray</i></h5>
+            <p class="w3-text-grey">Our Malteaser traybake, filled with light malteasers that melt in the mouth.</p>
+
+            <h5>Brownies <i>£6 half tray / £10 full tray</i></h5>
+            <p class="w3-text-grey">Available in four flavours - Chocolate(v), Kinder, Biscoff(v), Salted Caramel(v)</p>
+
+            <h5>Caramel shortbread (v) <i> £10 for 6, £18 for 12</i></h5>
+            <p class="w3-text-grey">Scottish classic with rich caramel </p>
+            <h6 class="w3-text-grey"><I>(v) - Vegan option available (n) - Contains Nuts</I></h6>
+
+
+          </div>
+          <div id="Cheesecake" class="w3-container menu w3-padding-48 w3-card">
+
+            <h5>Baked Cheesecake <i>£15 for 8” or 12 mini cheesecakes</i></h5>
+            <p class="w3-text-grey">Available in vanilla, raspberry ripple, chocolate, lemon, biscoff, honeycomb.</p>
+
+            <h5>Cheesecake <i> £13 for 8” or 12 mini cheesecakes</i></h5>
+            <p class="w3-text-grey">Available in vanilla, raspberry ripple, chocolate, lemon, biscoff, honeycomb.</p>
+
+          </div>
+
+          <div id="Cakes" class="w3-container menu w3-padding-48 w3-card">
+            <h6><i>Available as 8” (£18), loaf (£12) or cupcakes in quantities of 6 (£10 for 6, £15 for 12)</i></h6><br>
+
+            <h5>Carrot cake (v)</h5>
+            <h5>Sticky Toffee (v)</h5>
+            <h5>Vanilla and Jam (v)</h5>
+            <h5>Chocolate (v)</h5>
+            <h5>Lemon (v)</h5>
+            <h5>White Chocolate and Raspberry</h5>
+            <h5>Biscoff (v)</h5>
+            <h5>Lindor</h5>
+            <h5>Kinder</h5>
+            <h5>Ferrero Rocher </h5>
+            <h5>Chocolate Peanut Butter (v)</h5>
+            <h5>Banana and Chocolate (v)</h5>
+            <h5>Peanut butter and Banana (v)</h5>
+            <h5>Chocolate orange (v)</h5>
+            <h5>Sticky Ginger (v)</h5>
+            <h5>Name your flavour...</h5>
+            <p class="w3-text-grey">Add your specified flavour and we'll see what we can do!</p>
+            <h6 class="w3-text-grey"><I>(v) - Vegan option available (n) - Contains Nuts</I></h6>
+
+          </div>
+
+
+          <div id="Cupcakes" class="w3-container menu w3-padding-48 w3-card">
+            <h6><i> £10 for 6, £15 for 12</i></h6>
+            <h5>Carrot cake (v)</h5>
+            <h5>Sticky Toffee (v)</h5>
+            <h5>Vanilla and Jam (v)</h5>
+            <h5>Chocolate (v)</h5>
+            <h5>Lemon (v)</h5>
+            <h5>White Chocolate and Raspberry</h5>
+            <h5>Biscoff (v)</h5>
+            <h5>Lindor</h5>
+            <h5>Kinder</h5>
+            <h5>Ferrero Rocher </h5>
+            <h5>Chocolate Peanut Butter (v)</h5>
+            <h5>Banana and Chocolate (v)</h5>
+            <h5>Peanut butter and Banana (v)</h5>
+            <h5>Chocolate orange (v)</h5>
+            <h5>Sticky Ginger (v)</h5>
+            <h5>Name your flavour… </h5>
+            <p class="w3-text-grey">Add your specified flavor and we'll see what we can do!</p>
+            <h6 class="w3-text-grey"><I>(v) - Vegan (n) - Contains Nuts</I></h6>
+
+          </div>
+
+
+          <div id="Cookies" class="w3-container menu w3-padding-48 w3-card">
+            <h6><i> 6 for £5</i></h6>
+            <h5>Dark chocolate and almond (v)</h5>
+            <h5>Carrot cake (v) (n)</h5>
+            <h5>Rolo cookie cups</h5>
+            <h5>Shortbread</h5>
+            <h6 class="w3-text-grey"><I>(v) - Vegan option available (n) - Contains Nuts</I></h6>
+
+          </div>
+          <div id="Savoury" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Sourdough loaf (v)<I>£3</I></h5>
+            <h5>Plain loaf (v)<I>£3</I></h5>
+            <h5>Challah loaf <I>£3</I></h5>
+            <h5>Pretzel rolls<I>£5 for 6 </I></h5>
+            <h6 class="w3-text-grey"><I>(v) - Vegan option Available</I></h6>
+
+
+
+          </div>
+          <div id="Other" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Ice cream - name your flavour (v) </h5>
+            <h5>Crunchies (v)<i>£1.50 per 100g</i> </h5>
+
+            <h5>Scottish Macaroons bites (v) <i>£3.50 per 200g</i></h5>
+            <h5>Doughnut bites (v) <i>£4.00 per 200g</i></h5>
+            <h5>Date and Nut bites - either in coconut or cocoa (v)(n) <i>£5 for 6</i></h5>
+            <h6 class="w3-text-grey"><I>(v) - Vegan option available(n) - Contains Nuts</I></h6>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-48">
+            <div>
+              <img src="images\crunchie.jpg" style="width:100%;max-width:700px;margin-top:32px;">
+            </div>
+            <br>
+            <br>
+
+
+            <span class="w3-tag w3-wide">Order from us</span>
+          </h5>
+          <p>We deliver through Glasgow, Email us directly to discuss any deliveries outwith this area.
+          </p>
+          <p><strong>Order cut off</strong> Orders taken on tuesday will be delivered on Friday/Saturday </p>
+
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSewbns6AqNNklyNA9KnkUGtkjOUcvrFQVC__225W1lhkzKGgA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
+      <!-- End page content <-->
+      </-->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>HQ Kitchen 2020</a></p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+
+    </script>
+
+  </body>
+
+</html>
